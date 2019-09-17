@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2020
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto", "Eto\Eto.csproj", "{35EF0A4E-2A1A-492C-8BED-106774EA09F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eto", "Eto\Eto.csproj", "{35EF0A4E-2A1A-492C-8BED-106774EA09F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Serialization.Json", "Eto.Serialization.Json\Eto.Serialization.Json.csproj", "{3F8178EF-0710-43F7-92E2-130B9BE2212D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eto.Serialization.Json", "Eto.Serialization.Json\Eto.Serialization.Json.csproj", "{3F8178EF-0710-43F7-92E2-130B9BE2212D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Direct2D", "Eto.Direct2D\Eto.Direct2D.csproj", "{330EF9FD-5947-4AC9-9796-950C7633695F}"
 EndProject
@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.XamMac", "Eto.Mac\Eto.X
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E121B009-AB4B-4585-B3FB-D70E3DF8D3CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Test", "..\test\Eto.Test\Eto.Test.csproj", "{EB9C0A22-6644-46E4-948C-F7C95E1F8CE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eto.Test", "..\test\Eto.Test\Eto.Test.csproj", "{EB9C0A22-6644-46E4-948C-F7C95E1F8CE1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Test.Gtk2", "..\test\Eto.Test.Gtk2\Eto.Test.Gtk2.csproj", "{CC33FE70-CA54-11E3-9C1A-0800200C9A66}"
 EndProject
@@ -33,7 +33,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Test.WinForms", "..\tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Test.Wpf", "..\test\Eto.Test.Wpf\Eto.Test.Wpf.csproj", "{DD0C2B40-CA55-11E3-9C1A-0800200C9A66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Test.Mac", "..\test\Eto.Test.Mac\Eto.Test.Mac.csproj", "{A4267C50-C9EB-11E3-9C1A-0800200C9A66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eto.Test.Mac", "..\test\Eto.Test.Mac\Eto.Test.Mac.csproj", "{A4267C50-C9EB-11E3-9C1A-0800200C9A66}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Test.XamMac", "..\test\Eto.Test.Mac\Eto.Test.XamMac.csproj", "{9CEE7E60-C9EB-11E3-9C1A-0800200C9A66}"
 EndProject
@@ -41,7 +41,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Test.Direct2D", "..\tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Test.XamMac2-net461", "..\test\Eto.Test.Mac\Eto.Test.XamMac2-net461.csproj", "{689E4C20-2702-11E4-8C21-0800200C9A66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Test.Mac64", "..\test\Eto.Test.Mac\Eto.Test.Mac64.csproj", "{B5BC1D10-24ED-441C-A4D6-1F3AB9FF3689}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eto.Test.Mac64", "..\test\Eto.Test.Mac\Eto.Test.Mac64.csproj", "{B5BC1D10-24ED-441C-A4D6-1F3AB9FF3689}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Test.XamMac2-modern", "..\test\Eto.Test.Mac\Eto.Test.XamMac2-modern.csproj", "{A2DD2180-297D-11E5-A2CB-0800200C9A66}"
 EndProject
@@ -51,24 +51,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.XamMac2-net45", "Eto.Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.XamMac2-modern", "Eto.Mac\Eto.XamMac2-modern.csproj", "{BD6ED8F0-297C-11E5-A2CB-0800200C9A66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Serialization.Xaml", "Eto.Serialization.Xaml\Eto.Serialization.Xaml.csproj", "{E381E8CA-0DE1-4792-88F9-AC1529E911DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eto.Serialization.Xaml", "Eto.Serialization.Xaml\Eto.Serialization.Xaml.csproj", "{E381E8CA-0DE1-4792-88F9-AC1529E911DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{95227DFB-FD41-4709-BB54-3EA94C89C9C1}"
 	ProjectSection(SolutionItems) = preProject
-		..\build\Build.proj = ..\build\Build.proj
-		NuGet.Config = NuGet.Config
-		..\build\Utilities.targets = ..\build\Utilities.targets
 		..\.editorconfig = ..\.editorconfig
-		..\build\Common.props = ..\build\Common.props
-		..\build\Common.Build.props = ..\build\Common.Build.props
-		..\build\Common.Build.targets = ..\build\Common.Build.targets
 		..\appveyor.yml = ..\appveyor.yml
 		..\azure-pipelines.yml = ..\azure-pipelines.yml
+		..\build\Build.proj = ..\build\Build.proj
+		..\build\Common.Build.props = ..\build\Common.Build.props
+		..\build\Common.Build.targets = ..\build\Common.Build.targets
+		..\build\Common.props = ..\build\Common.props
+		NuGet.Config = NuGet.Config
+		..\build\Utilities.targets = ..\build\Utilities.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Gtk", "Eto.Gtk\Eto.Gtk.csproj", "{659873CA-9949-4353-B0AA-E0589D045584}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eto.Gtk", "Eto.Gtk\Eto.Gtk.csproj", "{659873CA-9949-4353-B0AA-E0589D045584}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eto.Test.Gtk", "..\test\Eto.Test.Gtk\Eto.Test.Gtk.csproj", "{063AF7E7-18BD-488F-85BF-53B6E3D75685}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eto.Test.Gtk", "..\test\Eto.Test.Gtk\Eto.Test.Gtk.csproj", "{063AF7E7-18BD-488F-85BF-53B6E3D75685}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -324,6 +324,7 @@ Global
 		{BD6ED8F0-297C-11E5-A2CB-0800200C9A66}.Release|Mac.ActiveCfg = Release|Any CPU
 		{BD6ED8F0-297C-11E5-A2CB-0800200C9A66}.Release|Mac.Build.0 = Release|Any CPU
 		{BD6ED8F0-297C-11E5-A2CB-0800200C9A66}.Release|Windows.ActiveCfg = Release|Any CPU
+		{BD6ED8F0-297C-11E5-A2CB-0800200C9A66}.Release|Windows.Build.0 = Release|Any CPU
 		{E381E8CA-0DE1-4792-88F9-AC1529E911DF}.Debug|Linux.ActiveCfg = Debug|Any CPU
 		{E381E8CA-0DE1-4792-88F9-AC1529E911DF}.Debug|Linux.Build.0 = Debug|Any CPU
 		{E381E8CA-0DE1-4792-88F9-AC1529E911DF}.Debug|Mac.ActiveCfg = Debug|Any CPU
