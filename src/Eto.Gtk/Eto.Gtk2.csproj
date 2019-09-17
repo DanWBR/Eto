@@ -28,29 +28,44 @@ On Linux, mono-complete 5.10 or higher and gtk-sharp2 packages are required.
   </PropertyGroup>
   
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="atk-sharp">
+      <HintPath>..\..\lib\gtk-sharp-2.0\atk-sharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="gdk-sharp">
+      <HintPath>..\..\lib\gtk-sharp-2.0\gdk-sharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="glade-sharp">
+      <HintPath>..\..\lib\gtk-sharp-2.0\glade-sharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="glib-sharp">
+      <HintPath>..\..\lib\gtk-sharp-2.0\glib-sharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="gtk-dotnet">
+      <HintPath>..\..\lib\gtk-sharp-2.0\gtk-dotnet.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="gtk-sharp">
+      <HintPath>..\..\lib\gtk-sharp-2.0\gtk-sharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Cairo">
+      <HintPath>..\..\lib\Mono.Cairo\Mono.Cairo.dll</HintPath>
+    </Reference>
+    <Reference Include="pango-sharp">
+      <HintPath>..\..\lib\gtk-sharp-2.0\pango-sharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
     <Reference Include="System.Core" />
-    <Reference Include="Mono.Cairo" Pack="False" />
-    <Reference Include="..\..\lib\webkit-sharp\webkit-sharp.dll" Private="False" />
-    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
-      <PackageVersion>2.0</PackageVersion>
-      <Package>gtk-sharp-2.0</Package>
-    </Reference>
-    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
-      <PackageVersion>2.0</PackageVersion>
-      <Package>gtk-sharp-2.0</Package>
-    </Reference>
-    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
-      <PackageVersion>2.0</PackageVersion>
-      <Package>glib-sharp-2.0</Package>
-    </Reference>
-    <Reference Include="pango-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
-      <PackageVersion>2.0</PackageVersion>
-      <Package>gtk-sharp-2.0</Package>
-    </Reference>
-    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
-      <PackageVersion>2.0</PackageVersion>
-      <Package>gtk-sharp-2.0</Package>
+    <Reference Include="webkit-sharp, Version=1.1.15.0, Culture=neutral, PublicKeyToken=eaa1d335d2e19745">
+      <HintPath>..\..\lib\webkit-sharp\webkit-sharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -82,13 +97,5 @@ On Linux, mono-complete 5.10 or higher and gtk-sharp2 packages are required.
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>EtoControls.cs</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="NativeMethods.cs">
-      <DependentUpon>NativeMethods.tt</DependentUpon>
-    </Compile>
-    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Forms\EtoControls.cs">
-      <DependentUpon>EtoControls.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
 </Project>

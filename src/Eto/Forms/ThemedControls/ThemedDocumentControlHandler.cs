@@ -8,7 +8,7 @@ namespace Eto.Forms.ThemedControls
 	/// A themed handler for the <see cref="DocumentControl"/> control.
 	/// </summary>
 	public class ThemedDocumentControlHandler : ThemedContainerHandler<TableLayout, DocumentControl, DocumentControl.ICallback>, DocumentControl.IHandler
-    {
+	{
 		List<DocumentPage> pages = new List<DocumentPage>();
 		ThemedDocumentPageHandler tabPrev, tabNext;
 
@@ -54,8 +54,8 @@ namespace Eto.Forms.ThemedControls
 		/// <summary>
 		/// Initializes a new instance of the <see cref="T:Eto.Forms.ThemedControls.ThemedDocumentControlHandler"/> class.
 		/// </summary>
-        public ThemedDocumentControlHandler()
-        {
+		public ThemedDocumentControlHandler()
+		{
 			mousePos = new PointF(-1, -1);
 			selectedIndex = -1;
 			nextPrevWidth = 0;
@@ -77,7 +77,7 @@ namespace Eto.Forms.ThemedControls
 
 			Control = new TableLayout(tabDrawable, contentPanel);
 			Control.SizeChanged += Widget_SizeChanged;
-        }
+		}
 
 		void Widget_SizeChanged(object sender, EventArgs e)
 		{
@@ -91,6 +91,7 @@ namespace Eto.Forms.ThemedControls
 		public override void OnLoad(EventArgs e)
 		{
 			base.OnLoad(e);
+
 			Calculate(true);
 		}
 
@@ -302,7 +303,7 @@ namespace Eto.Forms.ThemedControls
 						}
 						else
 							SelectedIndex = i;
-						
+
 						break;
 					}
 				}
@@ -384,7 +385,7 @@ namespace Eto.Forms.ThemedControls
 			if (!force && !Widget.Loaded)
 				return;
 			var posx = 0f;
-			if (nextPrevWidth == 0f)
+			if (nextPrevWidth == 0f && Widget.DisplayArrows)
 			{
 				CalculateTab(tabPrev, -1, ref posx);
 				CalculateTab(tabNext, -1, ref posx);
@@ -404,7 +405,7 @@ namespace Eto.Forms.ThemedControls
 		{
 			var g = e.Graphics;
 
-			g.Clear(SystemColors.Control);
+			g.Clear(Widget.BackgroundColor != null ? Widget.BackgroundColor : SystemColors.Control);
 
 			var posx = nextPrevWidth + startx;
 
@@ -421,8 +422,8 @@ namespace Eto.Forms.ThemedControls
 
 			posx = 0;
 
-			DrawTab(g, tabPrev, -1);
-			DrawTab(g, tabNext, -1);
+			if (Widget.DisplayArrows) DrawTab(g, tabPrev, -1);
+			if (Widget.DisplayArrows) DrawTab(g, tabNext, -1);
 		}
 
 		void CalculateTab(ThemedDocumentPageHandler tab, int i, ref float posx)
@@ -467,7 +468,7 @@ namespace Eto.Forms.ThemedControls
 			var tabRect = tab.Rect;
 			var textRect = tab.TextRect;
 			var closerect = tab.CloseRect;
-			var closemargin =  closerect.Height / 3;
+			var closemargin = closerect.Height / 3;
 			var size = tabRect.Size;
 
 			var textcolor = Enabled ? SystemColors.ControlText : SystemColors.DisabledText;

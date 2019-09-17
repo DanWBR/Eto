@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Collections.ObjectModel;
@@ -77,6 +77,11 @@ namespace Eto.Forms
 
 		static readonly object PageClosedEvent = new object();
 		static readonly object SelectedIndexChangedEvent = new object();
+
+		/// <summary>
+		/// Hide/Show arrows.
+		/// </summary>
+		public bool DisplayArrows { get; set; }
 
 		/// <summary>
 		/// Event identifier for the <see cref="PageReordered"/> event.
