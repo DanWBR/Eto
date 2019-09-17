@@ -405,7 +405,7 @@ namespace Eto.Forms.ThemedControls
 		{
 			var g = e.Graphics;
 
-			g.Clear(Widget.BackgroundColor != null ? Widget.BackgroundColor : SystemColors.Control);
+			g.Clear(Widget.TabBarBackgroundColor);
 
 			var posx = nextPrevWidth + startx;
 

@@ -84,6 +84,11 @@ namespace Eto.Forms
 		public bool DisplayArrows { get; set; }
 
 		/// <summary>
+		/// Tab Bar background color.
+		/// </summary>
+		public Drawing.Color TabBarBackgroundColor { get; set; } = Drawing.SystemColors.Control;
+
+		/// <summary>
 		/// Event identifier for the <see cref="PageReordered"/> event.
 		/// </summary>
 		public const string PageReorderedEvent = "DocumentControl.PageReordered";
