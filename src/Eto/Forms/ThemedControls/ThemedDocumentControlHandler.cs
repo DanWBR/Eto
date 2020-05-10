@@ -298,8 +298,12 @@ namespace Eto.Forms.ThemedControls
 						if (IsCloseSelected(tab))
 						{
 							var page = tab.Widget;
-							RemovePage(i);
-							Callback.OnPageClosed(Widget, new DocumentPageEventArgs(page));
+							page.TriggerCloseClicked(new DocumentPageEventArgs(page));
+							if (!page.CancelClose)
+							{
+								RemovePage(i);
+								Callback.OnPageClosed(Widget, new DocumentPageEventArgs(page));
+							}
 						}
 						else
 							SelectedIndex = i;
