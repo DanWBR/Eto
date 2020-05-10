@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Eto.Drawing;
 using System.Collections.ObjectModel;
 
@@ -31,9 +31,20 @@ namespace Eto.Forms
 		{
 		}
 
+		static object CloseClickedEvent = new object();
+
 		static object CloseEvent = new object();
 
 		static object ClickEvent = new object();
+
+		/// <summary>
+		/// Occurs when the tab is closing.
+		/// </summary>
+		public event EventHandler<EventArgs> CloseClicked
+		{
+			add { Properties.AddEvent(CloseClickedEvent, value); }
+			remove { Properties.RemoveEvent(CloseClickedEvent, value); }
+		}
 
 		/// <summary>
 		/// Occurs when the tab is closed.
@@ -51,6 +62,20 @@ namespace Eto.Forms
 		{
 			add { Properties.AddEvent(ClickEvent, value); }
 			remove { Properties.RemoveEvent(ClickEvent, value); }
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		public bool CancelClose { get; set; }
+
+		/// <summary>
+		/// Raises the <see cref="CloseClicked"/> event.
+		/// </summary>
+		/// <param name="e">Event arguments.</param>
+		protected virtual void OnCloseClicked(EventArgs e)
+		{
+			Properties.TriggerEvent(CloseClickedEvent, this, e);
 		}
 
 		/// <summary>
@@ -138,6 +163,11 @@ namespace Eto.Forms
 		internal void TriggerClick(EventArgs e)
 		{
 			OnClick(e);
+		}
+
+		internal void TriggerCloseClicked(EventArgs e)
+		{
+			OnCloseClicked(e);
 		}
 	}
 }
