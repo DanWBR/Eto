@@ -41,7 +41,6 @@ In VS For Mac, set the compile target to 'Executable with GUI' and uncheck 'Run 
   </ItemGroup>
   
   <ItemGroup Condition="$(TargetFramework) == 'net461'">
-    <ProjectReference Include="..\Eto.Mac\Eto.Mac64.csproj" />
     <ProjectReference Include="..\Eto.Wpf\Eto.Wpf.csproj" />
     <ProjectReference Include="..\Eto.Gtk\Eto.Gtk.csproj" />
   </ItemGroup>

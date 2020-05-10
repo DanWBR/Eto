@@ -15,7 +15,6 @@
   
   <ItemGroup>
     <ProjectReference Include="..\..\src\Eto\Eto.csproj" />
-    <ProjectReference Include="..\..\src\Eto.Mac\Eto.Mac64.csproj" />
     <ProjectReference Include="..\Eto.Test\Eto.Test.csproj" />
     <ProjectReference Include="..\..\lib\monomac\src\MonoMac.csproj" />
   </ItemGroup>
