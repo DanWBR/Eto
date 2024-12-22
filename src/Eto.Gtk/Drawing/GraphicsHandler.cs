@@ -607,7 +607,6 @@ namespace Eto.GtkSharp.Drawing
 #endif
 			}
 		}
-#endif
 
 		public void SetClip(RectangleF rectangle)
 		{
